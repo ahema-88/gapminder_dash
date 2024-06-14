@@ -162,18 +162,16 @@ value_box(
 value_box(
   title = "Lowest Life Expantancy",
   value = lowest_life_exp_value,
-  showcase = bsicons::bs_icon("heart"),
+  showcase = bsicons::bs_icon("thermometer"),
   theme = value_box_theme(bg="#214773"),
   p(paste0("(",lowest_life_exp_country,")")))
 ```
 
 ```{r}
-gap_07$average_life_exp_country
-
 value_box(
   title = "Average Life Expantancy",
   value = average_life_exp_value,
-  showcase = bsicons::bs_icon("heart"),
+  showcase = bsicons::bs_icon("graph-up"),
   theme = value_box_theme(bg="#3f71ab"),
   p(paste0("(",average_life_exp_country,")")))
 ```
