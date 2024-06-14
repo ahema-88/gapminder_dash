@@ -56,18 +56,16 @@ lowest_life_exp_value <-
   pull(lifeExp) %>% 
   round(1)
 
-# Average Life Expantancy country
-average_life_exp_country <- gap_07 %>% 
-  summarise(weighted_mean=sum(lifeExp*pop)/sum(pop) )  %>% 
-  round(1)
-
-average_life_exp_country <- "Global Average"
-
 # Average Life Expantancy value
 average_life_exp_value <- 
   gap_07 %>% 
   summarise(weighted_mean=sum(lifeExp * pop)/sum(pop) )  %>% 
   round(1)
+# Average Life Expantancy country
+
+average_life_exp_country <- "Global Average"
+
+
 ```
 
 
@@ -181,7 +179,7 @@ value_box(
 ### {width=70%}
 
 ```{r title = "Map of Countries by Life Expectancy"}
-gap_map_ggplotly
+gap_map_ggplotly 
 ```
 
 ### {width=30%}
