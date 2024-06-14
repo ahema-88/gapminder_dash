@@ -63,7 +63,7 @@ average_life_exp_value <-
   round(1)
 # Average Life Expantancy country
 
-average_life_exp_country <- "Global Average"
+average_life_exp_country <- "Life Exp Average"
 
 
 ```
